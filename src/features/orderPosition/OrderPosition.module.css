@@ -1,0 +1,27 @@
+.orderPosition {
+  height: 30px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 5px;
+  color: white;
+
+  background-color: rgb(0, 159, 252);
+}
+
+.bold {
+  color: black;
+}
+
+@media (max-width: 360px) {
+    .text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 300px) {
+    .text {
+        font-size: 12px;
+    }
+}

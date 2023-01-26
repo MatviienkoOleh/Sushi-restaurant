@@ -1,9 +1,13 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import categoriesReducer from "./../features/categories/categoriesSlice";
+import positionReducer from "./../features/position/positionSlice";
+import makeOrderFormReducer from "../features/makeOrderForm/makeOrderFormSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    categories: categoriesReducer,
+    position: positionReducer,
+    makeOrderForm: makeOrderFormReducer,
   },
 });
 

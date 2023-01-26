@@ -1,0 +1,78 @@
+.order {
+  position: fixed;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  height: 500px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(223, 220, 220);
+}
+
+.orderList {
+  text-align: center;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.header {
+  font-size: 26px;
+}
+
+.orderTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.totalPrice {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.5s ease-in-out;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(0, 159, 252);
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1215px) {
+  .order {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1040px) {
+  .order {
+    position: relative;
+    right: 0px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .order {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .order {
+    width: 80%;
+  }
+}

@@ -1,56 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import { useNavigate } from "react-router-dom";
+import styles from "./App.module.css";
+import Footer from "./features/footer/Footer";
+import Header from "./features/header/Header";
 
 function App() {
+  const navigate = useNavigate()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+    <div className={styles.App}>
+      <Header />
+      <main className={styles.main}>
+        <section className={styles.mainInfo}>
+          <h1 className={styles.header}>Sushi shop</h1>
+          <p className={styles.paragraph}>This website will help you to make an order in our restaurant</p>
+          <button className={styles.button} onClick={()=> navigate('/categories')}>Menu</button>
+        </section>
+        <img className={styles.homeLogo} src={'./../assets/sushiMain.png'} alt="HomeLogo" />
+      </main>
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,74 @@
+.position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  height: 300px;
+  width: 250px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  margin-right: 10px;
+
+  background-color: rgb(0, 159, 252);
+}
+
+.name {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.image {
+  margin-top: 0px;
+  width: 250px;
+  height: 150px;
+  margin-bottom: 5px;
+}
+
+.description {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding: 3px 3px ;
+  line-height: 19px;
+  height: 80px;
+  word-wrap: break-word;
+  overflow: hidden;
+
+  background-color: black;
+  color: white;
+}
+
+.piceSection {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  margin-left: 5px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.buttonBlock {
+  width: 70px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(228, 228, 228);
+}
+
+.button {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
